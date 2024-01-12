@@ -1,3 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+header {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+  font-size: 24px;
+}
+
+.logo img {
+  width: 350px;
+}
+
+.header_sort_part {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.header_sort_part li {
+  list-style: none;
+  cursor: pointer;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+}
+main .table_part {
+  background-color: red;
+  width: inherit;
+}
+main .user_part {
+  background-color: blue;
+  width: inherit;
+}
 
 /*# sourceMappingURL=main.css.map */
