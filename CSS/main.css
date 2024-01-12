@@ -12,6 +12,10 @@ header {
   align-items: center;
   font-size: 24px;
 }
+header a {
+  text-decoration: none;
+  color: black;
+}
 
 .logo img {
   width: 350px;
@@ -39,6 +43,24 @@ main .table_part {
 main .user_part {
   background-color: blue;
   width: inherit;
+}
+
+.drop-d-container {
+  position: relative;
+}
+
+.drop-d {
+  position: absolute;
+  display: none;
+  background: aquamarine;
+}
+
+.drop-d-container > a:hover + .drop-d {
+  display: block;
+}
+
+.drop-d-container:hover > .drop-d {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -10,7 +10,10 @@ header{
     height: 10vh;
     align-items: center;
     font-size: 24px;
-
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .logo{
@@ -23,7 +26,6 @@ header{
     display: flex;
     justify-content: space-between;
     gap: 60px;
-
     li{
         list-style: none;
        cursor: pointer;
@@ -43,4 +45,18 @@ main{
         background-color:blue;
         width: inherit;
     }
+}
+.drop-d-container{
+    position: relative;    
+}
+.drop-d{
+    position: absolute;
+    display: none;
+    background: aquamarine;
+}
+.drop-d-container > a:hover + .drop-d{
+    display: block;
+}
+.drop-d-container:hover > .drop-d{
+    display: block;
 }
