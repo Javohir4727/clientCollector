@@ -1,12 +1,19 @@
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: linear-gradient(100deg, #49a09d, #5f2c82);
+  font-weight: 100;
+}
 
 header {
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
   justify-content: space-between;
   height: 10vh;
@@ -34,28 +41,62 @@ main {
   width: 100%;
 }
 main .table_part {
-  background-color: rgb(184, 73, 73);
+ /*  background-color: rgb(184, 73, 73); */
   width: inherit;
 }
 main .user_part {
-  background-color: blue;
+  /* background-color: blue; */
   width: inherit;
 }
 
-table, tr, td {
-  text-align: center;
-  border: 1px solid yellow;
+table {
+  width: 800px;
   border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
-td {
-  padding: 5px 30px;
+th, td {
+  padding: 15px;
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+}
+th {
+	text-align: left;
+}
+thead td {
+background-color: #334aae;
+}
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+			}
+		}
+	}
 }
 h1 {
   display: flex;
   justify-content: center;
 }
 .teybl {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  /* left: 50%;
+  transform: translate(-50%, -50%); */
 }
 /*# sourceMappingURL=main.css.map */
