@@ -85,6 +85,7 @@ main .close_user {
   background-color: white;
   position: absolute;
   bottom: 0;
+  cursor: pointer;
 }
 main .close_user p {
   letter-spacing: 3px;
