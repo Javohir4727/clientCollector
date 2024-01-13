@@ -41,4 +41,13 @@ main .user_part {
   width: inherit;
 }
 
+table, tr, td {
+  text-align: center;
+  border: 1px solid yellow;
+  border-collapse: collapse;
+}
+td {
+  padding: 5px 30px;
+}
+
 /*# sourceMappingURL=main.css.map */
