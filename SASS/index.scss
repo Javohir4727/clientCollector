@@ -31,16 +31,71 @@ header{
 }
 main{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 35%;
     width: 100%;
+    height: 90vh;
+    
 
     .table_part{
-        background-color:rgb(184, 73, 73);
+        background-color:rgb(212, 144, 144);
         width: inherit;
     }
 
     .user_part{
-        background-color:blue;
-        width: inherit;
+        display: flex;
+        justify-content: center;
+        // transform: translateX(760px);
+  background-color:salmon;
+  align-items: center;
+  height: 90vh;
+  position: relative;
+
+  h2{
+    position: absolute;
+    top: 20%;
+    letter-spacing: 1px ;
+  }
+  form {
+display: grid;
+justify-content: center;
+
+input{
+ padding: 8px 30px;
+ border-radius: 10px;
+ border: none;
+}
+select{
+    padding: 8px 30px;
+}
+.wrap_checkbox{ 
+    margin-bottom: 30px;
+    #women{
+  margin-right: 25px;
     }
 }
+}
+label{
+    padding: 5px 0 ;
+}
+  }
+  button{
+    padding: 8px 30px;
+    border:none;
+    border-radius: 10px;
+  }
+  .close_user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color:white;
+    position: absolute;
+    bottom: 0;
+
+    p{
+        letter-spacing: 3px;
+        font-size: 22px;
+    }
+  }
+    }
