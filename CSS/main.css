@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 header {
@@ -41,4 +42,20 @@ main .user_part {
   width: inherit;
 }
 
+table, tr, td {
+  text-align: center;
+  border: 1px solid yellow;
+  border-collapse: collapse;
+}
+td {
+  padding: 5px 30px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.teybl {
+  display: flex;
+  justify-content: center;
+}
 /*# sourceMappingURL=main.css.map */
